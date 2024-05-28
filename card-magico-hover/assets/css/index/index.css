@@ -1,0 +1,4 @@
+@import '../global/global.css';
+
+/*partials*/
+@import './partials/card.css'
