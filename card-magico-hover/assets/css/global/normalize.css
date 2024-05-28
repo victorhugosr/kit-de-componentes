@@ -10,4 +10,5 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #191C29;
+    flex-wrap: wrap;
 }

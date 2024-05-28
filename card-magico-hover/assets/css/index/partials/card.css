@@ -21,6 +21,8 @@
     position: absolute;
     width: 100%;
     z-index: -1;
+    border-radius: 15px;
+    overflow: hidden;
 }
 
 .wrapper::before,
