@@ -10,7 +10,7 @@
     margin: 50px;
   }
 
-.cover-image {
+.imagem-capa {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -58,12 +58,12 @@
   );
 }
 
-.title {
+.titulo {
     width: 100%;
     transition: transform 0.5s;
 }
 
-.character {
+.personagem {
     width: 100%;
     opacity: 0;
     position: absolute;
@@ -78,7 +78,7 @@
     -moz-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
 }
 
-.card:hover .title {
+.card:hover .titulo {
     transform: translate3d(0%, -50px, 100px);
 }
 
@@ -92,7 +92,7 @@
     
 }
 
-.card:hover .character {
+.card:hover .personagem {
     opacity: 1;
     transform: translate3d(0%, -30%, -100px);
 }
