@@ -5,7 +5,7 @@
     align-items: center;
     max-width: 1200px;
     flex-wrap: wrap;
-    z-index: 1;
+    z-index: 2;
 }
 
 .container-card .card {
@@ -25,6 +25,10 @@
     backdrop-filter: blur(7px);
 }
 
+.container-card .card:hover {
+    background-color: blueviolet;
+}
+
 .container-card .card .content {
     padding: 20px;
     text-align: center;
@@ -34,6 +38,7 @@
 }
 
 .container-card .card:hover .content {
+    background-color: rgba(0, 0, 0, 0.5);
     transform: translateY(0px);
     opacity: 1;
 }
@@ -41,7 +46,7 @@
 .container-card .card h2 {
     position: absolute;
     font-size: 8rem;
-    color: rgba(255, 255, 255, 0.05);
+    color: rgba(255, 255, 255, 0.5);
     pointer-events: none;
     transition: 0.5s;
 }
@@ -62,6 +67,7 @@
 }
 
 .container-card .card .content p {
+    padding: 15px 0;
     font-size: 1em;
     color: white;
     font-weight: 300;
@@ -80,3 +86,21 @@
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
+.container-card .card-1:hover {
+    background: url('../../../../files/images/inicio.png') no-repeat center center/cover;
+}
+.container-card .card-2:hover {
+    background: url('../../../../files/images/explorando.png') no-repeat center center/cover;
+}
+.container-card .card-3:hover {
+    background: url('../../../../files/images/aventuras.png') no-repeat center center/cover;
+}
+.container-card .card-4:hover {
+    background: url('../../../../files/images/explorando.png') no-repeat center center/cover;
+}
+.container-card .card-5:hover {
+    background: url('../../../../files/images/inicio.png') no-repeat center center/cover;
+}
+.container-card .card-6:hover {
+    background: url('../../../../files/images/inicio.png') no-repeat center center/cover;
+}

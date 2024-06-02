@@ -7,57 +7,85 @@
     <title>Card Glow - Transparente</title>
 </head>
 <body>
+    <!-- BACKGROUND -->
+    <div id="container-estrela">
+        <div id="estrelas"></div>
+        <div id="estrelas2"></div>
+        <div id="estrelas3"></div>
+    </div>
+
     <div class="container-card">
-        <div class="card">
+        <div class="card card-1">
             <h2>1</h2>
             <div class="content">
-                <h3>Card Um</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse ipsum non corrupti quasi alias dolor obcaecati dolorum.</p>
+                <h3>O Início</h3>
+                <p>Em um mundo de possibilidades infinitas, cada passo é uma descoberta, cada escolha molda seu destino.</p>
                 <a href="https://vh-dev-links.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn">Mais informações!</a>
             </div>
         </div>
-        <div class="card">
+        <div class="card card-2">
             <h2>2</h2>
             <div class="content">
-                <h3>Card Dois</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse ipsum non corrupti quasi alias dolor obcaecati dolorum.</p>
+                <h3>Explorando</h3>
+                <p>Nas terras distantes do desconhecido, a coragem é sua bússola, a determinação é sua espada.</p>
                 <a href="https://vh-dev-links.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn">Mais informações!</a>
             </div>
         </div>
-        <div class="card">
+        <div class="card card-3">
             <h2>3</h2>
             <div class="content">
-                <h3>Card Três</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse ipsum non corrupti quasi alias dolor obcaecati dolorum.</p>
+                <h3>Runas</h3>
+                <p>Entre as ruínas antigas e os segredos esquecidos, encontra-se a chave para desvendar os mistérios do passado.</p>
                 <a href="https://vh-dev-links.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn">Mais informações!</a>
             </div>
         </div>
-        <div class="card">
+        <div class="card card-4">
             <h2>4</h2>
             <div class="content">
-                <h3>Card Quatro</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse ipsum non corrupti quasi alias dolor obcaecati dolorum.</p>
+                <h3>Aventuras</h3>
+                <p>Sob o céu estrelado, os sonhos se transformam em aventuras e os desafios se tornam oportunidades para crescer.</p>
                 <a href="https://vh-dev-links.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn">Mais informações!</a>
             </div>
         </div>
-        <div class="card">
+        <div class="card card-5">
             <h2>5</h2>
             <div class="content">
-                <h3>Card Cinco</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse ipsum non corrupti quasi alias dolor obcaecati dolorum.</p>
+                <h3>Conquista</h3>
+                <p>Navegando pelos mares bravios, cada onda traz consigo a promessa de um novo começo e a emoção de uma jornada sem fim.</p>
                 <a href="https://vh-dev-links.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn">Mais informações!</a>
             </div>
         </div>
-        <div class="card">
+        <div class="card card-6">
             <h2>6</h2>
             <div class="content">
-                <h3>Card Seis</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse ipsum non corrupti quasi alias dolor obcaecati dolorum.</p>
+                <h3>Fim</h3>
+                <p>Com um sorriso no rosto e um coração valente, embarque nesta jornada épica rumo ao desconhecido.</p>
                 <a href="https://vh-dev-links.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn">Mais informações!</a>
             </div>
         </div>
     </div>
+
+    <!-- PLAYER DE MÚSICA -->
+    <div class="audio-container">
+        <audio id="audio" src="files/music/musica.mp3" preload="auto" loop></audio>
+        <div id="playerContainer">
+            <button id="togglePlayer">
+                <img src="files/favicons/music-icon.svg" alt="Music Icon">
+            </button>
+            <div id="player" class="hidden">
+                <button id="playPauseBtn"><img src="files/favicons/play.svg" alt="Play"></button>
+                <div id="volumeControl">
+                    <button id="volumeBtn"><img src="files/favicons/volume.svg" alt="Volume"></button>
+                    <div id="volumeSlider">
+                        <input type="range" id="volumeRange" min="0" max="100" value="100" step="1">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script type="text/javascript" src="assets/js/vanilla-tilt.js"></script>
     <script type="text/javascript" src="assets/js/way.js"></script>
+    <script src="assets/js/btn_musica.js"></script>
 </body>
 </html>

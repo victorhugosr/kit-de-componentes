@@ -38,7 +38,7 @@ var VanillaTilt = (function () {
         this.settings = this.extendSettings(settings);
     
         this.reverse = this.settings.reverse ? -1 : 1;
-        this.resetToStart = VanillaTilt.isSettingTrue(this.settings["reset-to-start"]);
+        this.resetToestrelat = VanillaTilt.isSettingTrue(this.settings["reset-to-estrelat"]);
         this.glare = VanillaTilt.isSettingTrue(this.settings.glare);
         this.glarePrerender = VanillaTilt.isSettingTrue(this.settings["glare-prerender"]);
         this.fullPageListening = VanillaTilt.isSettingTrue(this.settings["full-page-listening"]);
@@ -58,9 +58,9 @@ var VanillaTilt = (function () {
         this.addEventListeners();
         this.reset();
     
-        if (this.resetToStart === false) {
-          this.settings.startX = 0;
-          this.settings.startY = 0;
+        if (this.resetToestrelat === false) {
+          this.settings.estrelatX = 0;
+          this.settings.estrelatY = 0;
         }
       }
     
@@ -225,13 +225,13 @@ var VanillaTilt = (function () {
     
         if (this.fullPageListening) {
           this.event = {
-            clientX: (this.settings.startX + this.settings.max) / (2 * this.settings.max) * this.clientWidth,
-            clientY: (this.settings.startY + this.settings.max) / (2 * this.settings.max) * this.clientHeight
+            clientX: (this.settings.estrelatX + this.settings.max) / (2 * this.settings.max) * this.clientWidth,
+            clientY: (this.settings.estrelatY + this.settings.max) / (2 * this.settings.max) * this.clientHeight
           };
         } else {
           this.event = {
-            clientX: this.left + ((this.settings.startX + this.settings.max) / (2 * this.settings.max) * this.width),
-            clientY: this.top + ((this.settings.startY + this.settings.max) / (2 * this.settings.max) * this.height)
+            clientX: this.left + ((this.settings.estrelatX + this.settings.max) / (2 * this.settings.max) * this.width),
+            clientY: this.top + ((this.settings.estrelatY + this.settings.max) / (2 * this.settings.max) * this.height)
           };
         }
     
@@ -399,8 +399,8 @@ var VanillaTilt = (function () {
        * Method return patched settings of instance
        * @param {boolean} settings.reverse - reverse the tilt direction
        * @param {number} settings.max - max tilt rotation (degrees)
-       * @param {startX} settings.startX - the starting tilt on the X axis, in degrees. Default: 0
-       * @param {startY} settings.startY - the starting tilt on the Y axis, in degrees. Default: 0
+       * @param {estrelatX} settings.estrelatX - the estrelating tilt on the X axis, in degrees. Default: 0
+       * @param {estrelatY} settings.estrelatY - the estrelating tilt on the Y axis, in degrees. Default: 0
        * @param {number} settings.perspective - Transform perspective, the lower the more extreme the tilt gets
        * @param {string} settings.easing - Easing on enter/exit
        * @param {number} settings.scale - 2 = 200%, 1.5 = 150%, etc..
@@ -413,17 +413,17 @@ var VanillaTilt = (function () {
        * @param {boolean} settings.full-page-listening - If true, parallax effect will listen to mouse move events on the whole document, not only the selected element
        * @param {string|object} settings.mouse-event-element - String selector or link to HTML-element what will be listen mouse events
        * @param {boolean} settings.reset - false = If the tilt effect has to be reset on exit
-       * @param {boolean} settings.reset-to-start - true = On reset event (mouse leave) will return to initial start angle (if startX or startY is set)
+       * @param {boolean} settings.reset-to-estrelat - true = On reset event (mouse leave) will return to initial estrelat angle (if estrelatX or estrelatY is set)
        * @param {gyroscope} settings.gyroscope - Enable tilting by deviceorientation events
        * @param {gyroscopeSensitivity} settings.gyroscopeSensitivity - Between 0 and 1 - The angle at which max tilt position is reached. 1 = 90deg, 0.5 = 45deg, etc..
-       * @param {gyroscopeSamples} settings.gyroscopeSamples - How many gyroscope moves to decide the starting position.
+       * @param {gyroscopeSamples} settings.gyroscopeSamples - How many gyroscope moves to decide the estrelating position.
        */
       extendSettings(settings) {
         let defaultSettings = {
           reverse: false,
           max: 15,
-          startX: 0,
-          startY: 0,
+          estrelatX: 0,
+          estrelatY: 0,
           perspective: 1000,
           easing: "cubic-bezier(.03,.98,.52,.99)",
           scale: 1,
@@ -436,7 +436,7 @@ var VanillaTilt = (function () {
           "full-page-listening": false,
           "mouse-event-element": null,
           reset: true,
-          "reset-to-start": true,
+          "reset-to-estrelat": true,
           gyroscope: true,
           gyroscopeMinAngleX: -45,
           gyroscopeMaxAngleX: 45,
