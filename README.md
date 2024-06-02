@@ -20,13 +20,13 @@ Este repositório foi criado com o intuito de fornecer uma variedade de componen
 
 ## Componentes Disponíveis
 
-### Card Animado Tipo 1
+### Card Animado - Hover - Mágico
 
 Este é um card com um efeito de hover onde um elemento escondido surge. Possui um fundo animado com CSS e é responsivo.
 
 ![Card Mágico - hover](link-do-card-1)
 
-### Card Animado Tipo 2
+### Card Animado - Hover - Glow 3D
 
 Este card é uma versão mais detalhada do primeiro. Além do efeito de hover, inclui um botão animado, um efeito 3D utilizando uma biblioteca JavaScript, e um player de música personalizado. Assim como o primeiro, possui um fundo animado com CSS e é responsivo.
 
