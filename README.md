@@ -8,11 +8,10 @@ Bem-vindo ao repositório "Kit de Componentes"! Este repositório contém uma co
 - [Componentes Disponíveis](https://github.com/victorhugosr/kit-de-componentes)
   - [Card Animado Tipo 1](https://github.com/victorhugosr/kit-de-componentes/tree/main/card-magico-hover)
   - [Card Animado Tipo 2](https://github.com/victorhugosr/kit-de-componentes/tree/main/card-glow-transparente)
-- [Instalação](#instalação)
-- [Uso](#uso)
-- [Contribuição](#contribuição)
-- [Licença](#licença)
-- [Contato](#contato)
+- [Uso](https://github.com/victorhugosr/kit-de-componentes/blob/main/LICENSE)
+- [Contribuição](https://github.com/victorhugosr/kit-de-componentes/pulls)
+- [Licença](https://github.com/victorhugosr/kit-de-componentes/blob/main/LICENSE)
+- [Contato](https://vh-dev-links.netlify.app/)
 
 ## Introdução
 
@@ -33,10 +32,3 @@ Este card é uma versão mais detalhada do primeiro. Além do efeito de hover, i
 ![Card Glow - hover](link-do-card-2)
 
 Outros componentes como sliders, menus de navegação, galerias, tabelas, etc. serão adicionados em breve.
-
-## Instalação
-
-Clone este repositório para a sua máquina local usando o seguinte comando:
-
-```bash
-git clone https://github.com/seu-usuario/kit-de-componentes.git
