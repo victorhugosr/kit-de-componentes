@@ -1,0 +1,16 @@
+/* BARRA DE ROLAGEM */
+
+::-webkit-scrollbar {
+    width: .7rem;
+}
+
+::-webkit-scrollbar-thumb {
+    cursor: grab;
+    background-color: #060029;
+    border-radius: 1rem;
+    border: 3px solid ;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #007bff;
+}
